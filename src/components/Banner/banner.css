@@ -1,0 +1,161 @@
+/* Slider General Styling */
+.slider {
+    z-index: 99;
+}
+
+.slider .carousel {
+    position: relative;
+}
+
+.slider .carousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Caption Styling */
+.slider .carousel .carousel-item .carousel-caption {
+    z-index: 99;
+    bottom: 20%;
+}
+
+.slider .carousel .carousel-item .carousel-caption .slider_des {
+    /* background: rgba(0, 0, 0, 0.5); */
+    padding: 1rem 2rem;
+    border-radius: 8px;
+}
+
+.slider .carousel .carousel-item .carousel-caption h5.heading {
+    font-size: 55px;
+    color: white;
+    font-weight: bolder;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+.slider .carousel .carousel-item .carousel-caption h5.heading span {
+    display: block;
+}
+
+.slider .carousel .carousel-item .carousel-caption .slider_des p.sub_text {
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Controls Styling */
+.slider .carousel .carousel-control-prev,
+.slider .carousel .carousel-control-next {
+    z-index: 100;
+    position: absolute;
+    top: 50%; /* Center vertically for better alignment */
+    width: 55px; /* Slightly larger for better visibility */
+    height: 55px;
+    background: rgba(144, 234, 9, 0.6); /* Reduced opacity for a more subtle look */
+    border-radius: 50%;
+    opacity: 0.9; /* Enhanced transparency for a sleeker design */
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider .carousel .carousel-control-prev:hover,
+.slider .carousel .carousel-control-next:hover {
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.4); /* Glow effect on hover */
+    background: rgba(183, 233, 4, 0.8); /* Slightly darker background on hover */
+    transform: scale(1.1); /* Subtle scaling for hover interactivity */
+}
+
+/* Arrow styling for controls */
+.slider .carousel .carousel-control-prev::after,
+.slider .carousel .carousel-control-next::after {
+    content: "";
+    display: block;
+    width: 12px; /* Larger arrow for better visibility */
+    height: 12px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(211, 225, 234);
+    transform: rotate(45deg); /* Default rotation */
+}
+
+.slider .carousel .carousel-control-prev::after {
+    transform: rotate(135deg); /* Arrow pointing left */
+}
+
+.slider .carousel .carousel-control-next::after {
+    transform: rotate(-45deg); /* Arrow pointing right */
+}
+
+/* Adjustments for smaller screens */
+@media only screen and (max-width: 767px) {
+    .slider .carousel .carousel-control-prev,
+    .slider .carousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+        top: 50%; /* Maintain centering */
+    }
+
+    .slider .carousel .carousel-control-prev::after,
+    .slider .carousel .carousel-control-next::after {
+        width: 8px; /* Smaller arrow for compact design */
+        height: 8px;
+    }
+}
+
+
+/* Responsive Design */
+@media only screen and (max-width: 991px) {
+    .slider .carousel .carousel-item .carousel-caption {
+        bottom: 18%;
+    }
+
+    .slider .carousel .carousel-item .carousel-caption h5.heading {
+        font-size: 35px;
+    }
+
+    .slider .carousel .carousel-item .carousel-caption .slider_des p.sub_text {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .slider .carousel .carousel-item img {
+        height: 350px;
+    }
+
+    .slider .carousel .carousel-item .carousel-caption {
+        bottom: 20%;
+        padding: 0 1rem;
+    }
+
+    .slider .carousel .carousel-item .carousel-caption h5.heading {
+        font-size: 30px;
+    }
+
+    .slider .carousel .carousel-item .carousel-caption .slider_des p.sub_text {
+        font-size: 0.9rem;
+    }
+
+    .slider .carousel .carousel-control-prev,
+    .slider .carousel .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .slider .carousel .carousel-item .carousel-caption {
+        bottom: 16%;
+        padding: 0 0.5rem;
+    }
+    .slider .carousel .carousel-control-prev,
+    .slider .carousel .carousel-control-next {
+        width: 30px;
+        height: 30px;
+    }
+}
