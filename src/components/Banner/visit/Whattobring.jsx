@@ -46,10 +46,7 @@ const Whattobring = () => {
         </div>
       </div>
 
-      <footer className="bg-primary text-white text-center py-3 mt-5">
-        <p className="mb-0">&copy; 2025 Kaffa Tourism. All Rights Reserved.</p>
-        <p className="mb-0">Follow us on <a href="#" className="text-white text-decoration-underline">Social Media</a></p>
-      </footer>
+
     </div>
   );
 };

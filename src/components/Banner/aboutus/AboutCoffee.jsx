@@ -118,12 +118,6 @@ const AboutCoffee = () => {
           <img src={Ceremony1} alt="Coffee Ceremony in Ethiopia" className="img-fluid rounded shadow" style={{ width: '90%', maxHeight: '250px' }} />
         </div>
       </div>
-
-      {/* Footer */}
-      <footer className="bg-primary text-white text-center py-2 mt-4">
-        <p className="mb-1">&copy; 2025 Kaffa Tourism. All Rights Reserved.</p>
-        <p className="mb-0">Follow us on <a href="#" className="text-white text-decoration-underline">Social Media</a></p>
-      </footer>
     </div>
   );
 };

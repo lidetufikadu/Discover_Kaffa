@@ -2,9 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Navbar, Offcanvas, Nav, NavDropdown } from 'react-bootstrap';
 import { NavLink } from "react-router-dom";
 import "../Header/Header.css";
+import { useLocation } from 'react-router-dom';
+
+import logo from "../../../assets/images/r.png";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const [currentLocation, setCurrentLocation] = useState('');
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if(location !==currentLocation ){
+      if(open && window.innerWidth < 992){
+        setOpen(false);
+      }
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    setCurrentLocation(setCurrentLocation);
+  }, [location]);
 
   const toggleMenu = () => {
     setOpen(!open);
@@ -29,9 +47,14 @@ const Header = () => {
   return (
     <header className="header-section">
       <Container>
-        <Navbar expand={expand} className="bg-body-tertiary mb-3">
-          <Navbar.Brand>
-            <NavLink to='/'> KAFFA </NavLink>     
+        <Navbar onToggle={toggleMenu} expand={expand} className="shadow mb-3 px-4" style={{backgroundColor:'#e3f2fd'}}>
+          <Navbar.Brand >
+            <NavLink to='/'> 
+            <div className='d-flex align-items-center'>
+              <img style={{width:'43px'}} src={logo} alt="KAFFA" />
+              <span className='ms-1' style={{fontSize:'1rem'}}>DISCOVER kAFFA</span>
+            </div>
+            </NavLink>     
           </Navbar.Brand>
 
           <Navbar.Offcanvas
@@ -41,11 +64,12 @@ const Header = () => {
             show={open}
           >
             <Offcanvas.Header>
-              <h1 className="logo">KAFFA</h1>
+                <img style={{width:'45px'}} src={logo} alt="KAFFA" />
               <span className="navbar-toggler ms-auto" onClick={toggleMenu}>
-                <i className="bi bi-x-lg"></i>
+                  <i className="bi bi-x-lg" style={{ border: '1px solid black', padding: '4px', borderRadius: '4px' }}></i>
               </span>
             </Offcanvas.Header>
+
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
                 <NavLink className='nav-link' to="/">HOME</NavLink>
@@ -76,7 +100,7 @@ const Header = () => {
                   <NavDropdown
                   title="TRAVEL PREPARATIONS"
                   id={`offcanvasNavbarDropdown-expand-lg`}
-                >
+                > 
                   <NavDropdown.Item as={NavLink} to="/TravelPreparations">TRAVEL PREPARATIONS</NavDropdown.Item>
                   <NavDropdown.Item as={NavLink} to="/Healthcare">HEALTH CARE</NavDropdown.Item>
                   <NavDropdown.Item as={NavLink} to="/Whattobring">WHAT TO BRING</NavDropdown.Item>
@@ -106,7 +130,9 @@ const Header = () => {
 
           <div className="ms-md-4 ms-2">
             <li className='d-inline-block d-lg-none d-sm-inline-block'>
-              <i className={open ? "bi bi-x-lg" : "bi bi-list"} onClick={toggleMenu}></i>
+              <i className={open ? "bi bi-x-xl" : "bi bi-list"} 
+              style={{ border: '1px solid black', padding: '4px', borderRadius: '4px' }}
+              onClick={toggleMenu}></i>
             </li>
           </div>
         </Navbar>

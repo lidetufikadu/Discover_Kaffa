@@ -62,10 +62,10 @@ const SecondTourHome = () => {
           </div>
         ))}
       </div>
-       <footer className="bg-primary text-white text-center py-3 mt-5">
-        <p className="mb-0">&copy; 2025 Kaffa Tourism. All Rights Reserved.</p>
-        <p className="mb-0">Follow us on <a href="#" className="text-white text-decoration-underline">Social Media</a></p>
-      </footer>
+       {/* <footer className="bg-primary text-white text-center py-3 mt-5">
+        <p className="mb-0">&copy; 2025 Discover Kaffa. All Rights Reserved.</p>
+        <p className="mb-0">Proudly Powered By <a href=" https://www.instagram.com/babayo_ld?igsh=Y2QwazR5bm16OWU1 " className="text-white text-decoration-underline">LidetuFikadu </a></p>
+      </footer> */}
 
       <style jsx>{`
         .card:hover {

@@ -23,10 +23,7 @@ const DiningKaffa = () => {
         Despite its rurality, Kafa offers various dining options. Apart from the traditional dishes, Western dining options are often available, especially on the traditional fasting days on Wednesday and Fridays, or upon request from an arranged cook.</p>
       </div>
 
-      <footer className="bg-primary text-white text-center py-3 mt-5">
-        <p className="mb-0">&copy; 2025 Kaffa Tourism. All Rights Reserved.</p>
-        <p className="mb-0">Follow us on <a href="#" className="text-white text-decoration-underline">Social Media</a></p>
-      </footer>
+     
     </div>
   );
 };

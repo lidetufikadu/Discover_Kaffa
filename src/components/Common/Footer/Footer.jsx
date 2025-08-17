@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
 
-const Footer = () => {
+export default function Footer() {
   return (
-    <div></div>
-  )
+    <footer className="bg-primary text-white text-center py-3 mt-5">
+      <p className="mb-0">&copy; 2025 Discover Kaffa. All Rights Reserved.</p>
+      <p className="mb-0">
+        Proudly Powered By Lidetu Fikadu{" "}
+        <a
+          href="https://www.instagram.com/babayo_ld?igsh=Y2QwazR5bm16OWU1"
+          className="text-white text-decoration-underline"
+        >
+          Social Media
+        </a>
+      </p>
+    </footer>
+  );
 }
-
-export default Footer

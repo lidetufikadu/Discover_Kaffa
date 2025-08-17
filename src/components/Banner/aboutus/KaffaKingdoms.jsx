@@ -12,7 +12,7 @@ const KaffaKingdoms = () => {
     "King of Bonga (Boongee Taatoo) 1565-1605 G.C",
     "King Gimba Nechoch (Gimmba Neechoochi) 1605-1640 G.C",
     "King Gali Gafoch (Gallii Gafoochi) 1640-1675 G.C",
-    "King Gali Ginecho (Galli Ginecho) 1675-1710 G.C.",
+    "King Gali Ginecho (Galli Ginecho) 1675-1710 G.C.", 
     "Emperor Gaki Gayoch (Gaakki Gayoochi) 1710-1742 G.C",
     "Emperor Gali Gawecho (Gallii Gaaweecho) 1742-1775 G.C",
     "Emperor Shagi Sharecho (Shaggii Sharecho) 1775-1795 G.C",
@@ -62,10 +62,7 @@ const KaffaKingdoms = () => {
         ))}
       </div>
 
-      <footer className="bg-primary text-white text-center py-3 mt-5">
-        <p className="mb-0">&copy; 2025 Kaffa Tourism. All Rights Reserved.</p>
-        <p className="mb-0">Follow us on <a href="#" className="text-white text-decoration-underline">Social Media</a></p>
-      </footer>
+     
     </div>
   );
 };

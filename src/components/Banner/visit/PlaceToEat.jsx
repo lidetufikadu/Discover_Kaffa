@@ -22,10 +22,7 @@ const PlaceToEat = () => {
         Many opportunities to cook for oneself also exist. The KDA Guesthouse, as well as some other guesthouses, provides self-catering kitchens in their facilities. Fresh food for cooking is available at the local market and the shops around town. Special arrangements for a particular type of food can easily be made or you can arrange a cook for one meal, a trek, or your entire holiday upon request at your hotel or guesthouse. </p>
       </div>
 
-      <footer className="bg-primary text-white text-center py-3 mt-5">
-        <p className="mb-0">&copy; 2025 Kaffa Tourism. All Rights Reserved.</p>
-        <p className="mb-0">Follow us on <a href="#" className="text-white text-decoration-underline">Social Media</a></p>
-      </footer>
+     
     </div>
   );
 };

@@ -31,6 +31,7 @@ function App() {
   return (
     <>
       <Header />
+      <div style={{ marginTop: "15px" }}></div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/biosphere" element={<Biosphere />} />
@@ -48,7 +49,8 @@ function App() {
           path="/KaffaSpiritualPlaces"
           element={<KaffaSpiritualPlaces />}
         />
-        <Route path="/WhenToVisit" element={<WhenToVisit />} />        <Route path="/Healthcare" element={<Healthcare />} />
+        <Route path="/WhenToVisit" element={<WhenToVisit />} />{" "}
+        <Route path="/Healthcare" element={<Healthcare />} />
         <Route path="/Howtogethere" element={<Howtogethere />} />
         <Route path="/LocalTours" element={<LocalTours />} />
         <Route path="/Accommodation" element={<Accommodation />} />
