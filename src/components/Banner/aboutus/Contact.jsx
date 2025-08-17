@@ -57,6 +57,7 @@ const Contact = () => {
           Fill out the form below or reach out to us using the contact information provided.
         </p>
 
+
         <form
           action="https://api.web3forms.com/submit"
           method="POST"
