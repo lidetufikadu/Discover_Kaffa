@@ -1,7 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css'; // Ensure Bootstrap is imported
-import sliderImg from "../../assets/images/ctp.png";
+import sliderImg from "../../assets/images/backg.png";
 import sliderImg1 from "../../assets/images/ac.jpg";
 import "../Banner/banner.css";
 
